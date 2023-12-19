@@ -6,7 +6,9 @@ namespace WA_GitSampleProject.Controllers
 	{
 		public IActionResult Index()
 		{
-			return View();
+			Random rdn = new();
+
+			return View(rdn.Next());
 		}
 	}
 }
